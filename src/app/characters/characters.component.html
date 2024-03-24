@@ -1,0 +1,3 @@
+@for (character of charactersService.getCharacters(); track character.id) {
+  <app-character [character]="character" />
+}
