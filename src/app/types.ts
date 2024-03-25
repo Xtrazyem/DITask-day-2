@@ -27,5 +27,11 @@ export interface Location {
 export type Characters = Character[];
 
 export interface CharactersRes {
+  info: {
+    count: number;
+    pages: number;
+    next: string;
+    prev: string | null;
+  };
   results: Characters;
 }

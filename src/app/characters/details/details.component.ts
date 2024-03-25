@@ -10,14 +10,4 @@ import { Character } from '../../types';
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss',
 })
-export class DetailsComponent implements OnInit {
-  private readonly charactersService = inject(CharactersService);
-  private readonly activatedRoute = inject(ActivatedRoute);
-  character!: Character;
-
-  ngOnInit(): void {
-    this.character = this.charactersService.getCharacter(
-      this.activatedRoute.snapshot.params['id'],
-    );
-  }
-}
+export class DetailsComponent {}
